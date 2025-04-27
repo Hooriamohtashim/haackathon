@@ -157,13 +157,16 @@ const LoginPage = () => (
 );
 
 // Signup page component
+
 const SignupPage = () => (
   <div style={styles.authContainer}>
     <h2 style={styles.authTitle}>Sign Up</h2>
     <Signup />
-    <p>Already have an account? <Link to="/" style={styles.link}>Login</Link></p>
+    <p>Already have an account? <Link to="/login" style={styles.link}>Login</Link></p> {/* 👉 Here */}
   </div>
 );
+
+
 
 // Inline styles
 const styles = {

@@ -46,12 +46,12 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)} // Binding input to state
           />
-          <button type="submit" className="login-button">Login</button>
+          <Link to="Dashboard" type="submit" className="login-button">Login</Link>
         </form>
         {error && <p className="error-message">{error}</p>} {/* Show error message */}
         <p className="login-link-text">
           Don't have an account?{" "}
-          <Link to="/Signup" className="login-link">Sign Up</Link>
+          <Link to="Signup" className="login-link">Sign Up</Link>
         </p>
       </div>
 
